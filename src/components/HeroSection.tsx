@@ -50,7 +50,6 @@ const HeroSection = () => {
             <ArrowDown className="ml-2 h-5 w-5 group-hover:translate-y-1 transition-transform" />
           </Button>
           <Button 
-            variant="outline" 
             className="btn-outline-hero"
             size="lg"
           >
