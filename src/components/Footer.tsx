@@ -9,9 +9,9 @@ const Footer = () => {
         <div className="text-center space-y-6">
           <div className="flex items-center justify-center gap-2">
             <Mountain className="h-6 w-6" />
-            <p className="text-2xl font-heading font-bold">Mansi</p>
+            <p className="text-2xl font-heading font-bold">Mansi Nayyar</p>
           </div>
-          
+
           <p className="text-primary-foreground/80 max-w-2xl mx-auto">
             Creative Writer & Ad Ideator crafting campaigns that move mountains and people.
           </p>
@@ -23,9 +23,7 @@ const Footer = () => {
           </div>
 
           <div className="border-t border-primary-foreground/20 pt-6">
-            <p className="text-sm text-primary-foreground/60">
-              © {currentYear} Mansi. All rights reserved.
-            </p>
+            <p className="text-sm text-primary-foreground/60">© {currentYear} Mansi Nayyar. All rights reserved.</p>
           </div>
         </div>
       </div>

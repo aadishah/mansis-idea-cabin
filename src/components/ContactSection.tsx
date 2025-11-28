@@ -30,15 +30,11 @@ const ContactSection = () => {
     <section id="contact" className="section-padding bg-gradient-subtle">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">
-            Let's Talk
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Let's Talk</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-2">
             Got a brief, a crazy idea, or a dog photo to share?
           </p>
-          <p className="text-2xl font-heading font-semibold text-accent">
-            Let's make something great together.
-          </p>
+          <p className="text-2xl font-heading font-semibold text-accent">Let's make something great together.</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -88,12 +84,10 @@ const ContactSection = () => {
           {/* Contact Info */}
           <div className="space-y-8 animate-fade-in">
             <div className="bg-card rounded-2xl p-8 shadow-soft border border-border">
-              <h3 className="text-2xl font-heading font-bold mb-6 text-foreground">
-                Get In Touch
-              </h3>
+              <h3 className="text-2xl font-heading font-bold mb-6 text-foreground">Get In Touch</h3>
               <div className="space-y-4">
                 <a
-                  href="mailto:mansi@example.com"
+                  href="mailto:manc.nayyar@gmail.com"
                   className="flex items-center gap-4 text-muted-foreground hover:text-accent transition-colors group"
                 >
                   <div className="bg-accent/10 p-3 rounded-full group-hover:bg-accent/20 transition-colors">
@@ -101,7 +95,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-foreground">Email</p>
-                    <p className="text-sm">mansi@example.com</p>
+                    <p className="text-sm">manc.nayyar@gmail.com</p>
                   </div>
                 </a>
 
@@ -124,8 +118,8 @@ const ContactSection = () => {
 
             <div className="bg-gradient-mountain rounded-2xl p-8 text-primary-foreground">
               <p className="text-lg leading-relaxed italic">
-                "If you've got a brief, I've got ten different ways to break it open. 
-                Let's create something that moves people."
+                "If you've got a brief, I've got ten different ways to break it open. Let's create something that moves
+                people."
               </p>
             </div>
           </div>
