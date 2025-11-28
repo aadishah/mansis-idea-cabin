@@ -37,14 +37,12 @@ const Navigation = () => {
   return <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-md shadow-soft" : "bg-transparent"}`}>
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <a 
-            href="#" 
+          <button 
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} 
-            className="text-2xl font-heading font-bold transition-colors duration-300 cursor-pointer text-foreground"
+            className="text-2xl font-heading font-bold text-foreground cursor-pointer"
           >
             Mansi Nayyar
-          </a>
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
