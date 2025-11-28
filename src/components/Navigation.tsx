@@ -39,7 +39,9 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           <button 
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} 
-            className="text-2xl font-heading font-bold text-foreground cursor-pointer"
+            className={`text-2xl font-heading font-bold cursor-pointer transition-colors duration-300 ${
+              isScrolled ? "text-foreground" : "text-white"
+            }`}
           >
             Mansi Nayyar
           </button>
