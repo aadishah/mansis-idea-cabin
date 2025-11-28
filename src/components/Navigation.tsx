@@ -38,10 +38,13 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" onClick={() => window.scrollTo({
-          top: 0,
-          behavior: "smooth"
-        })} className={`text-2xl font-heading font-bold transition-colors cursor-pointer ${isScrolled ? "text-foreground" : "text-primary-foreground"}`}>
+          <a 
+            href="#" 
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} 
+            className={`text-2xl font-heading font-bold transition-colors duration-300 cursor-pointer ${
+              isScrolled ? "text-foreground" : "text-white"
+            }`}
+          >
             Mansi Nayyar
           </a>
 
