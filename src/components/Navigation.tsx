@@ -41,9 +41,7 @@ const Navigation = () => {
           <a 
             href="#" 
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} 
-            className={`text-2xl font-heading font-bold transition-colors duration-300 cursor-pointer ${
-              isScrolled ? "text-foreground" : "text-white"
-            }`}
+            className="text-2xl font-heading font-bold transition-colors duration-300 cursor-pointer text-foreground"
           >
             Mansi Nayyar
           </a>
