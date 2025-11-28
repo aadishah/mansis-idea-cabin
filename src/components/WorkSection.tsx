@@ -19,10 +19,11 @@ const workItems: WorkItem[] = [
     brand: "Brand A",
     title: "Campaign That Moved Mountains",
     hook: "Turning everyday moments into brand magic",
-    category: ["Digital", "Social", "Personal Favorite"],
+    category: ["Digital", "Social"],
     role: "Creative Writer, Ideation",
     insight: "People don't buy products. They buy better versions of themselves.",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Crafted social-first content that sparked conversations and drove engagement across platforms.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Crafted social-first content that sparked conversations and drove engagement across platforms.",
   },
   {
     id: 2,
@@ -32,7 +33,8 @@ const workItems: WorkItem[] = [
     category: ["Films", "Digital"],
     role: "Concept Development, Script",
     insight: "The best stories challenge what we think we know.",
-    description: "Developed a film campaign that questioned industry norms and resonated with audiences seeking authenticity.",
+    description:
+      "Developed a film campaign that questioned industry norms and resonated with audiences seeking authenticity.",
   },
   {
     id: 3,
@@ -49,7 +51,7 @@ const workItems: WorkItem[] = [
     brand: "Brand D",
     title: "Social That Sparked Joy",
     hook: "60-second stories that stayed forever",
-    category: ["Social", "Digital", "Personal Favorite"],
+    category: ["Social", "Digital"],
     role: "Content Strategy, Copywriting",
     insight: "In a scroll-happy world, emotion stops thumbs.",
     description: "Crafted bite-sized content that punched above its weight in engagement and recall.",
@@ -58,20 +60,17 @@ const workItems: WorkItem[] = [
 
 const WorkSection = () => {
   const [activeFilter, setActiveFilter] = useState<string>("All");
-  
-  const categories = ["All", "Digital", "Social", "Films", "Experiential", "Personal Favorite"];
-  
-  const filteredWork = activeFilter === "All" 
-    ? workItems 
-    : workItems.filter(item => item.category.includes(activeFilter));
+
+  const categories = ["All", "Digital", "Social", "Films", "Experiential"];
+
+  const filteredWork =
+    activeFilter === "All" ? workItems : workItems.filter((item) => item.category.includes(activeFilter));
 
   return (
     <section id="work" className="section-padding bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">
-            Selected Work
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Selected Work</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Work that kept the deadlines and broke a few rules
           </p>
@@ -97,21 +96,11 @@ const WorkSection = () => {
         {/* Work Grid */}
         <div className="grid md:grid-cols-2 gap-8">
           {filteredWork.map((item, index) => (
-            <div
-              key={item.id}
-              className="card-work animate-scale-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
+            <div key={item.id} className="card-work animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
               <div className="mb-4">
-                <h3 className="text-sm font-semibold text-accent uppercase tracking-wider mb-2">
-                  {item.brand}
-                </h3>
-                <h4 className="text-2xl font-heading font-bold text-foreground mb-2">
-                  {item.title}
-                </h4>
-                <p className="text-muted-foreground italic">
-                  {item.hook}
-                </p>
+                <h3 className="text-sm font-semibold text-accent uppercase tracking-wider mb-2">{item.brand}</h3>
+                <h4 className="text-2xl font-heading font-bold text-foreground mb-2">{item.title}</h4>
+                <p className="text-muted-foreground italic">{item.hook}</p>
               </div>
 
               <div className="flex flex-wrap gap-2 mb-4">
@@ -131,9 +120,7 @@ const WorkSection = () => {
                   <span className="font-semibold text-foreground">Key Insight: </span>
                   <span className="text-muted-foreground italic">"{item.insight}"</span>
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
-                  {item.description}
-                </p>
+                <p className="text-muted-foreground leading-relaxed">{item.description}</p>
               </div>
 
               <button className="mt-6 flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors">
