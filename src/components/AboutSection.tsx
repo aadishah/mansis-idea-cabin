@@ -14,9 +14,7 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Column - Main Story */}
           <div className="space-y-6">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground animate-fade-in">
-              About Mansi Nayyar
-            </h2>
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground animate-fade-in">About Me</h2>
             <div
               className="space-y-4 text-lg text-muted-foreground leading-relaxed animate-fade-in"
               style={{ animationDelay: "0.2s" }}
