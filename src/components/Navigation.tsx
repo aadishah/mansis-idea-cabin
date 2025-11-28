@@ -50,23 +50,40 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            {navItems.map(item => <button key={item.href} onClick={() => scrollToSection(item.href)} className={`hover:text-accent transition-colors font-medium ${isScrolled ? "text-foreground" : "text-primary-foreground"}`}>
-                {item.label}
-              </button>)}
+            {navItems.map(item => <button 
+              key={item.href} 
+              onClick={() => scrollToSection(item.href)} 
+              className={`hover:text-accent transition-colors duration-300 font-medium ${
+                isScrolled ? "text-foreground" : "text-white"
+              }`}
+            >
+              {item.label}
+            </button>)}
             <Button className="btn-hero">Download Resume</Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className={`md:hidden hover:text-accent transition-colors ${isScrolled ? "text-foreground" : "text-primary-foreground"}`}>
+          <button 
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} 
+            className={`md:hidden hover:text-accent transition-colors duration-300 ${
+              isScrolled ? "text-foreground" : "text-white"
+            }`}
+          >
             {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && <div className="md:hidden mt-4 space-y-4 animate-fade-in">
-            {navItems.map(item => <button key={item.href} onClick={() => scrollToSection(item.href)} className={`block w-full text-left py-2 hover:text-accent transition-colors font-medium ${isScrolled ? "text-foreground" : "text-primary-foreground"}`}>
-                {item.label}
-              </button>)}
+            {navItems.map(item => <button 
+              key={item.href} 
+              onClick={() => scrollToSection(item.href)} 
+              className={`block w-full text-left py-2 hover:text-accent transition-colors duration-300 font-medium ${
+                isScrolled ? "text-foreground" : "text-white"
+              }`}
+            >
+              {item.label}
+            </button>)}
             <Button className="btn-hero w-full mt-4">Download Resume</Button>
           </div>}
       </div>
