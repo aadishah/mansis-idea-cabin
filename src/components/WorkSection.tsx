@@ -9,6 +9,7 @@ import utecAntiTermiteThumbnail from "@/assets/work/utec-anti-termite-thumbnail.
 import tideThumbnail from "@/assets/work/tide-thumbnail.png";
 import tideBanterThumbnail from "@/assets/work/tide-banter-thumbnail.png";
 import arielThumbnail from "@/assets/work/ariel-thumbnail.png";
+import ceatThumbnail from "@/assets/work/ceat-thumbnail.png";
 
 type WorkItem = {
   id: number;
@@ -84,6 +85,14 @@ const workItems: WorkItem[] = [
     category: ["Social"],
     thumbnail: arielThumbnail,
     url: "https://www.instagram.com/p/Cjhla3pBGti/?igshid=MzRlODBiNWFlZA%3D%3D",
+  },
+  {
+    id: 9,
+    brand: "Ceat",
+    title: "Topical",
+    category: ["Social"],
+    thumbnail: ceatThumbnail,
+    url: "https://www.instagram.com/p/CuOBzb-B8M1/?igshid=MzRlODBiNWFlZA%3D%3D",
   },
 ];
 
