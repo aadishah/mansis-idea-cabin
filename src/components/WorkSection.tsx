@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink } from "lucide-react";
 import olaNzThumbnail from "@/assets/work/ola-nz-thumbnail.png";
 import diataalThumbnail from "@/assets/work/diataal-thumbnail.png";
+import linkedinThumbnail from "@/assets/work/linkedin-thumbnail.png";
 
 type WorkItem = {
   id: number;
@@ -33,11 +34,11 @@ const workItems: WorkItem[] = [
   },
   {
     id: 3,
-    brand: "Diataal",
-    title: "Health Ka Daily Investment",
+    brand: "LinkedIn",
+    title: "Job Search and Professional Network",
     category: ["Digital"],
-    thumbnail: diataalThumbnail,
-    url: "https://www.youtube.com/watch?v=MVpdGg32IPg",
+    thumbnail: linkedinThumbnail,
+    url: "https://www.behance.net/gallery/144906827/LinkedIn-2022?tracking_source=search_projects%7Csatyajeet%20more",
   },
 ];
 
