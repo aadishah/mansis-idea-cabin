@@ -113,6 +113,16 @@ const ContactSection = () => {
                     <p className="text-sm">Connect with me</p>
                   </div>
                 </a>
+
+                <div className="flex items-center gap-4 text-muted-foreground">
+                  <div className="bg-accent/10 p-3 rounded-full">
+                    <span className="text-2xl">⌨️</span>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Fax</p>
+                    <p className="text-sm">Just Kidding!</p>
+                  </div>
+                </div>
               </div>
             </div>
 
