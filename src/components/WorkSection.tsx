@@ -8,7 +8,6 @@ type WorkItem = {
   title: string;
   category: string[];
   hook?: string;
-  url: string;
   thumbnail: string;
 };
 
@@ -18,8 +17,7 @@ const workItems: WorkItem[] = [
     brand: "Ola NZ",
     title: "Ready Before Your Are",
     category: ["Digital"],
-    url: "#",
-    thumbnail: "/placeholder.svg",
+    thumbnail: "#",
   },
 ];
 
@@ -63,7 +61,7 @@ const WorkSection = () => {
           {filteredWork.map((item, index) => (
             <div key={item.id} className="card-work animate-scale-in overflow-hidden" style={{ animationDelay: `${index * 0.1}s` }}>
               <a 
-                href={item.url} 
+                href={item.thumbnail} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="relative aspect-video mb-4 overflow-hidden rounded-lg bg-muted block group"
