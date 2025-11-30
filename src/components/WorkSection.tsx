@@ -14,6 +14,7 @@ import ceatIndependenceThumbnail from "@/assets/work/ceat-independence-thumbnail
 import flipkartMinutesThumbnail from "@/assets/work/flipkart-minutes-thumbnail.png";
 import flipkartGaneshThumbnail from "@/assets/work/flipkart-ganesh-thumbnail.png";
 import asianPaintsThumbnail from "@/assets/work/asian-paints-thumbnail.png";
+import tooYummThumbnail from "@/assets/work/too-yumm-thumbnail.png";
 
 type WorkItem = {
   id: number;
@@ -129,6 +130,14 @@ const workItems: WorkItem[] = [
     category: ["Brand Placement"],
     thumbnail: asianPaintsThumbnail,
     url: "https://www.linkedin.com/posts/fcbind_fcb-fcbindia-growthgloryguts-ugcPost-7355851163520438273-viaU?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAAwLWnEBQ5Vfs3waPznpLhR4CrXOWfxAyF4",
+  },
+  {
+    id: 14,
+    brand: "Too Yumm!",
+    title: "Too Yumm To Cheer",
+    category: ["Experiential", "Award Winning"],
+    thumbnail: tooYummThumbnail,
+    url: "https://www.linkedin.com/posts/parth-chhatrapati-912622200_too-yumm-to-cheer-ugcPost-7318654833433989122-FSM8?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAAwLWnEBQ5Vfs3waPznpLhR4CrXOWfxAyF4",
   },
 ];
 
