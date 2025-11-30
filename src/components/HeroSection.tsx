@@ -23,10 +23,10 @@ const HeroSection = () => {
             Hi, I'm Mansi.
           </span>
           <br />
-          <span className="inline-block text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] animate-fade-in-up" style={{
+          <span style={{
           animationDelay: '0.3s'
-        }}>
-            I write ideas that move people.
+        }} className="inline-block text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] animate-fade-in-up text-3xl">
+            Made by curiosity, sharpened by chaos, driven by instinct.
           </span>
         </h1>
         
@@ -37,9 +37,7 @@ const HeroSection = () => {
         <p className="text-lg md:text-xl text-white/90 mb-14 max-w-2xl mx-auto leading-relaxed animate-fade-in-up" style={{
         animationDelay: '0.7s'
       }}>
-          Turning briefs into bold campaigns. Breaking rules. Building brands. 
-          One idea at a time.
-        </p>
+      </p>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in-up" style={{
         animationDelay: '0.9s'
