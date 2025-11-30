@@ -27,7 +27,7 @@ const workItems: WorkItem[] = [
     id: 2,
     brand: "Diataal",
     title: "Health Ka Daily Investment",
-    category: ["Digital", "Films"],
+    category: ["Digital"],
     thumbnail: diataalThumbnail,
     url: "#",
   },
@@ -71,15 +71,19 @@ const WorkSection = () => {
         {/* Work Grid */}
         <div className="grid md:grid-cols-2 gap-8">
           {filteredWork.map((item, index) => (
-            <div key={item.id} className="card-work animate-scale-in overflow-hidden" style={{ animationDelay: `${index * 0.1}s` }}>
-              <a 
-                href={item.url} 
-                target="_blank" 
+            <div
+              key={item.id}
+              className="card-work animate-scale-in overflow-hidden"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <a
+                href={item.url}
+                target="_blank"
                 rel="noopener noreferrer"
                 className="relative aspect-video mb-4 overflow-hidden rounded-lg bg-muted block group"
               >
-                <img 
-                  src={item.thumbnail} 
+                <img
+                  src={item.thumbnail}
                   alt={`${item.brand} - ${item.title}`}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
