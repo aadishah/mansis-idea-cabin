@@ -47,7 +47,7 @@ const HeroSection = () => {
         </p>
 
         <div
-          className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in-up"
+          className="flex justify-center items-center animate-fade-in-up"
           style={{
             animationDelay: "0.9s",
           }}
@@ -55,9 +55,6 @@ const HeroSection = () => {
           <Button onClick={scrollToWork} className="btn-hero group" size="lg">
             View My Work
             <ArrowDown className="ml-2 h-5 w-5 group-hover:translate-y-1 transition-transform" />
-          </Button>
-          <Button className="btn-outline-hero" size="lg">
-            Download Resume
           </Button>
         </div>
       </div>
