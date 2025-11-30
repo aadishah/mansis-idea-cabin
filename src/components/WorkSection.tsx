@@ -8,6 +8,7 @@ import utecThumbnail from "@/assets/work/utec-thumbnail.png";
 import utecAntiTermiteThumbnail from "@/assets/work/utec-anti-termite-thumbnail.png";
 import tideThumbnail from "@/assets/work/tide-thumbnail.png";
 import tideBanterThumbnail from "@/assets/work/tide-banter-thumbnail.png";
+import arielThumbnail from "@/assets/work/ariel-thumbnail.png";
 
 type WorkItem = {
   id: number;
@@ -75,6 +76,14 @@ const workItems: WorkItem[] = [
     category: ["Social"],
     thumbnail: tideBanterThumbnail,
     url: "https://www.instagram.com/p/Cm_yjvNhbYa/?igshid=MzRlODBiNWFlZA%3D%3D",
+  },
+  {
+    id: 8,
+    brand: "Ariel",
+    title: "Moment Marketing",
+    category: ["Social"],
+    thumbnail: arielThumbnail,
+    url: "https://www.instagram.com/p/Cjhla3pBGti/?igshid=MzRlODBiNWFlZA%3D%3D",
   },
 ];
 
