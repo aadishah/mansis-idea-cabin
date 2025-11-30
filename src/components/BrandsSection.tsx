@@ -60,7 +60,7 @@ const BrandsSection = () => {
                 <img
                   src={brand.logo}
                   alt={`${brand.name} logo`}
-                  className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                  className="w-full h-full object-contain transition-all duration-300"
                 />
               </div>
             </div>
