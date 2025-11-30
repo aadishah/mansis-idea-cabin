@@ -13,6 +13,7 @@ import ceatThumbnail from "@/assets/work/ceat-thumbnail.png";
 import ceatIndependenceThumbnail from "@/assets/work/ceat-independence-thumbnail.png";
 import flipkartMinutesThumbnail from "@/assets/work/flipkart-minutes-thumbnail.png";
 import flipkartGaneshThumbnail from "@/assets/work/flipkart-ganesh-thumbnail.png";
+import asianPaintsThumbnail from "@/assets/work/asian-paints-thumbnail.png";
 
 type WorkItem = {
   id: number;
@@ -121,12 +122,20 @@ const workItems: WorkItem[] = [
     thumbnail: flipkartGaneshThumbnail,
     url: "https://www.youtube.com/watch?v=tv_oV6l3iU4",
   },
+  {
+    id: 13,
+    brand: "Asian Paints",
+    title: "Damp Proof Cricket Pitch",
+    category: ["Brand Placement"],
+    thumbnail: asianPaintsThumbnail,
+    url: "https://www.linkedin.com/posts/fcbind_fcb-fcbindia-growthgloryguts-ugcPost-7355851163520438273-viaU?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAAwLWnEBQ5Vfs3waPznpLhR4CrXOWfxAyF4",
+  },
 ];
 
 const WorkSection = () => {
   const [activeFilter, setActiveFilter] = useState<string>("All");
 
-  const categories = ["All", "Digital", "Social", "Films", "Experiential"];
+  const categories = ["All", "Digital", "Social", "Films", "Experiential", "Brand Placement"];
 
   const filteredWork =
     activeFilter === "All" ? workItems : workItems.filter((item) => item.category.includes(activeFilter));
