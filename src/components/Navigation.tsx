@@ -24,8 +24,8 @@ const Navigation = () => {
     label: "Projects",
     href: "#personal-projects"
   }, {
-    label: "Journal",
-    href: "#journal"
+    label: "Brands",
+    href: "#brands"
   }, {
     label: "Awards",
     href: "#awards"
