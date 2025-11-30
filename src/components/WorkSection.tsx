@@ -6,6 +6,7 @@ import diataalThumbnail from "@/assets/work/diataal-thumbnail.png";
 import linkedinThumbnail from "@/assets/work/linkedin-thumbnail.png";
 import utecThumbnail from "@/assets/work/utec-thumbnail.png";
 import utecAntiTermiteThumbnail from "@/assets/work/utec-anti-termite-thumbnail.png";
+import tideThumbnail from "@/assets/work/tide-thumbnail.png";
 
 type WorkItem = {
   id: number;
@@ -57,6 +58,14 @@ const workItems: WorkItem[] = [
     category: ["Digital"],
     thumbnail: utecAntiTermiteThumbnail,
     url: "https://www.youtube.com/watch?v=07cyTw-8vSE",
+  },
+  {
+    id: 6,
+    brand: "Tide",
+    title: "International Day of Happiness",
+    category: ["Social"],
+    thumbnail: tideThumbnail,
+    url: "https://www.instagram.com/p/CqArjApoG6W/?igshid=MzRlODBiNWFlZA%3D%3D",
   },
 ];
 
