@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink } from "lucide-react";
 import olaNzThumbnail from "@/assets/work/ola-nz-thumbnail.png";
+import diataalThumbnail from "@/assets/work/diataal-thumbnail.png";
 
 type WorkItem = {
   id: number;
@@ -21,6 +22,14 @@ const workItems: WorkItem[] = [
     category: ["Digital"],
     thumbnail: olaNzThumbnail,
     url: "https://www.youtube.com/watch?v=I3hqYrm1xTo",
+  },
+  {
+    id: 2,
+    brand: "Diataal",
+    title: "Health Ka Daily Investment",
+    category: ["Digital", "Films"],
+    thumbnail: diataalThumbnail,
+    url: "#",
   },
 ];
 
