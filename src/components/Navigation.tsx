@@ -21,9 +21,6 @@ const Navigation = () => {
     label: "Work",
     href: "#work"
   }, {
-    label: "Projects",
-    href: "#personal-projects"
-  }, {
     label: "Brands",
     href: "#brands"
   }, {
@@ -80,7 +77,6 @@ const Navigation = () => {
             >
               {item.label}
             </button>)}
-            <Button className="btn-hero">Download Resume</Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -105,7 +101,6 @@ const Navigation = () => {
             >
               {item.label}
             </button>)}
-            <Button className="btn-hero w-full mt-4">Download Resume</Button>
           </div>}
       </div>
     </nav>;
