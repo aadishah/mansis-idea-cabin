@@ -5,6 +5,7 @@ import olaNzThumbnail from "@/assets/work/ola-nz-thumbnail.png";
 import diataalThumbnail from "@/assets/work/diataal-thumbnail.png";
 import linkedinThumbnail from "@/assets/work/linkedin-thumbnail.png";
 import utecThumbnail from "@/assets/work/utec-thumbnail.png";
+import utecAntiTermiteThumbnail from "@/assets/work/utec-anti-termite-thumbnail.png";
 
 type WorkItem = {
   id: number;
@@ -48,6 +49,14 @@ const workItems: WorkItem[] = [
     category: ["Digital"],
     thumbnail: utecThumbnail,
     url: "https://www.youtube.com/watch?v=tuO7DM6dvlI",
+  },
+  {
+    id: 5,
+    brand: "Utec",
+    title: "Mamaji Ke Bhi Mamaji: Anti Termite Treatment",
+    category: ["Digital"],
+    thumbnail: utecAntiTermiteThumbnail,
+    url: "https://www.youtube.com/watch?v=07cyTw-8vSE",
   },
 ];
 
