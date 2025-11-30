@@ -7,6 +7,8 @@ type WorkItem = {
   brand: string;
   title: string;
   category: string[];
+  hook?: string;
+  url: string;
 };
 
 const workItems: WorkItem[] = [
@@ -15,6 +17,7 @@ const workItems: WorkItem[] = [
     brand: "Ola NZ",
     title: "Ready Before Your Are",
     category: ["Digital"],
+    url: "#",
   },
 ];
 
@@ -70,10 +73,15 @@ const WorkSection = () => {
                   </Badge>
                 ))}
               </div>
-              <button className="mt-6 flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors">
+              <a 
+                href={item.url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="mt-6 flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors"
+              >
                 View Work
                 <ExternalLink className="h-4 w-4" />
-              </button>
+              </a>
             </div>
           ))}
         </div>
