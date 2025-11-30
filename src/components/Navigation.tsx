@@ -28,26 +28,21 @@ const Navigation = () => {
     href: "#journal"
   }, {
     label: "Awards",
-    href: "/awards",
-    isRoute: true
+    href: "#awards"
   }, {
     label: "Contact",
     href: "#contact"
   }];
-  const handleNavigation = (href: string, isRoute?: boolean) => {
-    if (isRoute) {
-      navigate(href);
-    } else {
-      if (location.pathname !== "/") {
-        navigate("/");
-        setTimeout(() => {
-          const element = document.querySelector(href);
-          element?.scrollIntoView({ behavior: "smooth" });
-        }, 100);
-      } else {
+  const handleNavigation = (href: string) => {
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
         const element = document.querySelector(href);
         element?.scrollIntoView({ behavior: "smooth" });
-      }
+      }, 100);
+    } else {
+      const element = document.querySelector(href);
+      element?.scrollIntoView({ behavior: "smooth" });
     }
     setIsMobileMenuOpen(false);
   };
@@ -78,7 +73,7 @@ const Navigation = () => {
           <div className="hidden md:flex items-center gap-8">
             {navItems.map(item => <button 
               key={item.href} 
-              onClick={() => handleNavigation(item.href, item.isRoute)} 
+              onClick={() => handleNavigation(item.href)} 
               className={`hover:text-accent transition-colors duration-300 font-medium ${
                 isScrolled ? "text-foreground" : "text-white"
               }`}
@@ -103,7 +98,7 @@ const Navigation = () => {
         {isMobileMenuOpen && <div className="md:hidden mt-4 space-y-4 animate-fade-in">
             {navItems.map(item => <button 
               key={item.href} 
-              onClick={() => handleNavigation(item.href, item.isRoute)} 
+              onClick={() => handleNavigation(item.href)} 
               className={`block w-full text-left py-2 hover:text-accent transition-colors duration-300 font-medium ${
                 isScrolled ? "text-foreground" : "text-white"
               }`}

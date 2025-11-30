@@ -89,16 +89,6 @@ const AwardsSection = () => {
           ))}
         </div>
 
-        {/* View All Button */}
-        <div className="text-center animate-fade-in" style={{ animationDelay: "500ms" }}>
-          <Button
-            onClick={() => window.location.href = "/awards"}
-            className="btn-hero group"
-          >
-            View All Awards
-            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </Button>
-        </div>
       </div>
     </section>
   );
