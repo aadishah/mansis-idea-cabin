@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -33,20 +36,37 @@ const Navigation = () => {
   }];
   const handleNavigation = (href: string, isRoute?: boolean) => {
     if (isRoute) {
-      window.location.href = href;
+      navigate(href);
     } else {
-      const element = document.querySelector(href);
-      element?.scrollIntoView({
-        behavior: "smooth"
-      });
+      if (location.pathname !== "/") {
+        navigate("/");
+        setTimeout(() => {
+          const element = document.querySelector(href);
+          element?.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      } else {
+        const element = document.querySelector(href);
+        element?.scrollIntoView({ behavior: "smooth" });
+      }
     }
     setIsMobileMenuOpen(false);
+  };
+
+  const scrollToTop = () => {
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }, 100);
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   };
   return <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-md shadow-soft" : "bg-transparent"}`}>
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <button 
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} 
+            onClick={scrollToTop} 
             className={`text-2xl font-heading font-bold cursor-pointer transition-colors duration-300 ${
               isScrolled ? "text-foreground" : "text-white"
             }`}
