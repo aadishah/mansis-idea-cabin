@@ -70,21 +70,8 @@ const WorkSection = () => {
                   </Badge>
                 ))}
               </div>
-
-              <div className="space-y-3 text-sm">
-                <div>
-                  <span className="font-semibold text-foreground">Role: </span>
-                  <span className="text-muted-foreground">{item.role}</span>
-                </div>
-                <div>
-                  <span className="font-semibold text-foreground">Key Insight: </span>
-                  <span className="text-muted-foreground italic">"{item.insight}"</span>
-                </div>
-                <p className="text-muted-foreground leading-relaxed">{item.description}</p>
-              </div>
-
               <button className="mt-6 flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors">
-                View Case Study
+                View Work
                 <ExternalLink className="h-4 w-4" />
               </button>
             </div>
