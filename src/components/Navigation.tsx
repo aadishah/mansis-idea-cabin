@@ -24,6 +24,9 @@ const Navigation = () => {
     label: "Brands",
     href: "#brands"
   }, {
+    label: "Experience",
+    href: "#timeline"
+  }, {
     label: "Awards",
     href: "#awards"
   }, {
