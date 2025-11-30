@@ -10,6 +10,7 @@ import tideThumbnail from "@/assets/work/tide-thumbnail.png";
 import tideBanterThumbnail from "@/assets/work/tide-banter-thumbnail.png";
 import arielThumbnail from "@/assets/work/ariel-thumbnail.png";
 import ceatThumbnail from "@/assets/work/ceat-thumbnail.png";
+import ceatIndependenceThumbnail from "@/assets/work/ceat-independence-thumbnail.png";
 
 type WorkItem = {
   id: number;
@@ -93,6 +94,14 @@ const workItems: WorkItem[] = [
     category: ["Social"],
     thumbnail: ceatThumbnail,
     url: "https://www.instagram.com/p/CuOBzb-B8M1/?igshid=MzRlODBiNWFlZA%3D%3D",
+  },
+  {
+    id: 10,
+    brand: "Ceat",
+    title: "Independence Day Film",
+    category: ["Digital"],
+    thumbnail: ceatIndependenceThumbnail,
+    url: "https://www.instagram.com/reel/Cv8mXrnoxAS/?igshid=MzRlODBiNWFlZA%3D%3D",
   },
 ];
 
