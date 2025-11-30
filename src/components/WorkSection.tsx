@@ -29,7 +29,15 @@ const workItems: WorkItem[] = [
     title: "Health Ka Daily Investment",
     category: ["Digital"],
     thumbnail: diataalThumbnail,
-    url: "#",
+    url: "https://www.youtube.com/watch?v=MVpdGg32IPg",
+  },
+  {
+    id: 3,
+    brand: "Diataal",
+    title: "Health Ka Daily Investment",
+    category: ["Digital"],
+    thumbnail: diataalThumbnail,
+    url: "https://www.youtube.com/watch?v=MVpdGg32IPg",
   },
 ];
 
