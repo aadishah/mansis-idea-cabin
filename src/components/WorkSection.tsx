@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink } from "lucide-react";
+import olaNzThumbnail from "@/assets/work/ola-nz-thumbnail.png";
 
 type WorkItem = {
   id: number;
@@ -18,7 +19,7 @@ const workItems: WorkItem[] = [
     brand: "Ola NZ",
     title: "Ready Before Your Are",
     category: ["Digital"],
-    thumbnail: "/placeholder.svg",
+    thumbnail: olaNzThumbnail,
     url: "https://www.youtube.com/watch?v=I3hqYrm1xTo",
   },
 ];
