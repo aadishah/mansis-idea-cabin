@@ -62,35 +62,37 @@ const WorkSection = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {filteredWork.map((item, index) => (
             <div key={item.id} className="card-work animate-scale-in overflow-hidden" style={{ animationDelay: `${index * 0.1}s` }}>
-              <div className="relative aspect-video mb-4 overflow-hidden rounded-lg bg-muted">
+              <a 
+                href={item.url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="relative aspect-video mb-4 overflow-hidden rounded-lg bg-muted block group"
+              >
                 <img 
                   src={item.thumbnail} 
                   alt={`${item.brand} - ${item.title}`}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-              </div>
+                <div className="absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="flex items-center gap-2 text-primary-foreground font-semibold text-lg">
+                    View Work
+                    <ExternalLink className="h-5 w-5" />
+                  </div>
+                </div>
+              </a>
               <div className="mb-4">
                 <h3 className="text-sm font-semibold text-accent uppercase tracking-wider mb-2">{item.brand}</h3>
                 <h4 className="text-2xl font-heading font-bold text-foreground mb-2">{item.title}</h4>
                 <p className="text-muted-foreground italic">{item.hook}</p>
               </div>
 
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-wrap gap-2">
                 {item.category.map((cat) => (
                   <Badge key={cat} variant="secondary" className="rounded-full">
                     {cat}
                   </Badge>
                 ))}
               </div>
-              <a 
-                href={item.url} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="mt-6 flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors"
-              >
-                View Work
-                <ExternalLink className="h-4 w-4" />
-              </a>
             </div>
           ))}
         </div>
