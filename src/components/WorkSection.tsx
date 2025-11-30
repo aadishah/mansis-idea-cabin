@@ -6,55 +6,15 @@ type WorkItem = {
   id: number;
   brand: string;
   title: string;
-  hook: string;
   category: string[];
-  role: string;
-  insight: string;
-  description: string;
 };
 
 const workItems: WorkItem[] = [
   {
     id: 1,
-    brand: "Brand A",
-    title: "Campaign That Moved Mountains",
-    hook: "Turning everyday moments into brand magic",
-    category: ["Digital", "Social"],
-    role: "Creative Writer, Ideation",
-    insight: "People don't buy products. They buy better versions of themselves.",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Crafted social-first content that sparked conversations and drove engagement across platforms.",
-  },
-  {
-    id: 2,
-    brand: "Brand B",
-    title: "The Campaign That Broke Rules",
-    hook: "When tradition meets disruption",
-    category: ["Films", "Digital"],
-    role: "Concept Development, Script",
-    insight: "The best stories challenge what we think we know.",
-    description:
-      "Developed a film campaign that questioned industry norms and resonated with audiences seeking authenticity.",
-  },
-  {
-    id: 3,
-    brand: "Brand C",
-    title: "Experience Redefined",
-    hook: "Making the ordinary extraordinary",
-    category: ["Experiential", "Social"],
-    role: "Lead Writer, Creative Strategy",
-    insight: "Memories beat messages every time.",
-    description: "Created an immersive brand experience that turned casual observers into passionate advocates.",
-  },
-  {
-    id: 4,
-    brand: "Brand D",
-    title: "Social That Sparked Joy",
-    hook: "60-second stories that stayed forever",
-    category: ["Social", "Digital"],
-    role: "Content Strategy, Copywriting",
-    insight: "In a scroll-happy world, emotion stops thumbs.",
-    description: "Crafted bite-sized content that punched above its weight in engagement and recall.",
+    brand: "Ola NZ",
+    title: "Ready Before Your Are",
+    category: ["Digital"],
   },
 ];
 
