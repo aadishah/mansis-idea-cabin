@@ -12,6 +12,7 @@ import arielThumbnail from "@/assets/work/ariel-thumbnail.png";
 import ceatThumbnail from "@/assets/work/ceat-thumbnail.png";
 import ceatIndependenceThumbnail from "@/assets/work/ceat-independence-thumbnail.png";
 import flipkartMinutesThumbnail from "@/assets/work/flipkart-minutes-thumbnail.png";
+import flipkartGaneshThumbnail from "@/assets/work/flipkart-ganesh-thumbnail.png";
 
 type WorkItem = {
   id: number;
@@ -111,6 +112,14 @@ const workItems: WorkItem[] = [
     category: ["Experiential"],
     thumbnail: flipkartMinutesThumbnail,
     url: "https://www.linkedin.com/posts/pratikshetty_ordered-delivered-shot-outdoor-up-outside-activity-7374667010489774082-hH-_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAAwLWnEBQ5Vfs3waPznpLhR4CrXOWfxAyF4",
+  },
+  {
+    id: 12,
+    brand: "Flipkart Minutes",
+    title: "Ganesh Chaturthi Film",
+    category: ["Digital"],
+    thumbnail: flipkartGaneshThumbnail,
+    url: "https://www.youtube.com/watch?v=tv_oV6l3iU4",
   },
 ];
 
