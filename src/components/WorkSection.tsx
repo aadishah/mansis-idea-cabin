@@ -9,6 +9,7 @@ type WorkItem = {
   category: string[];
   hook?: string;
   url: string;
+  thumbnail: string;
 };
 
 const workItems: WorkItem[] = [
@@ -18,6 +19,7 @@ const workItems: WorkItem[] = [
     title: "Ready Before Your Are",
     category: ["Digital"],
     url: "#",
+    thumbnail: "/placeholder.svg",
   },
 ];
 
@@ -59,7 +61,14 @@ const WorkSection = () => {
         {/* Work Grid */}
         <div className="grid md:grid-cols-2 gap-8">
           {filteredWork.map((item, index) => (
-            <div key={item.id} className="card-work animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
+            <div key={item.id} className="card-work animate-scale-in overflow-hidden" style={{ animationDelay: `${index * 0.1}s` }}>
+              <div className="relative aspect-video mb-4 overflow-hidden rounded-lg bg-muted">
+                <img 
+                  src={item.thumbnail} 
+                  alt={`${item.brand} - ${item.title}`}
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                />
+              </div>
               <div className="mb-4">
                 <h3 className="text-sm font-semibold text-accent uppercase tracking-wider mb-2">{item.brand}</h3>
                 <h4 className="text-2xl font-heading font-bold text-foreground mb-2">{item.title}</h4>
