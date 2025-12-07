@@ -1,14 +1,11 @@
 const experiences = [
-  { company: "FCB Kinnect Digital", role: "Copy & Ideas for multiple campaigns", period: "2023 - Present" },
-  { company: "Agency Two", role: "Copy & Ideas for multiple campaigns", period: "2022 - 2023" },
-  { company: "Agency One", role: "Copy & Ideas for multiple campaigns", period: "2021 - 2022" },
-  { company: "Brand Alpha", role: "Copy & Ideas for multiple campaigns", period: "2020 - 2021" },
-  { company: "Brand Beta", role: "Copy & Ideas for multiple campaigns", period: "2019 - 2020" },
-  { company: "Brand Gamma", role: "Copy & Ideas for multiple campaigns", period: "2018 - 2019" },
-  { company: "Brand Delta", role: "Copy & Ideas for multiple campaigns", period: "2017 - 2018" },
-  { company: "Brand Epsilon", role: "Copy & Ideas for multiple campaigns", period: "2016 - 2017" },
-  { company: "Brand Zeta", role: "Copy & Ideas for multiple campaigns", period: "2015 - 2016" },
-  { company: "Brand Eta", role: "Copy & Ideas for multiple campaigns", period: "2014 - 2015" },
+  { company: "FCB Kinnect", role: "Copy Supervisor", period: "Jul 2024 - Present" },
+  { company: "FCB Kinnect", role: "Senior Copywriter", period: "Dec 2022 - Jul 2024" },
+  { company: "Leo Burnett", role: "Copywriter", period: "Aug 2020 - Feb 2023" },
+  { company: "Eighty Degree Adventure Sports", role: "Social Media Manager (Freelance)", period: "Jan 2018 - Mar 2020" },
+  { company: "Wiki of Thrones", role: "Content Writer (Freelance)", period: "Oct 2016 - Feb 2017" },
+  { company: "Hindustan Times", role: "Advertising Sales (Internship)", period: "Aug 2014 - Dec 2014" },
+  { company: "DNA News Paper", role: "Junior Journalist", period: "Oct 2013 - Jan 2014" },
 ];
 const TimelineSection = () => {
   return <section id="timeline" className="section-padding bg-background">
