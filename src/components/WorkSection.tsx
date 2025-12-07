@@ -17,6 +17,7 @@ import asianPaintsThumbnail from "@/assets/work/asian-paints-thumbnail.png";
 import tooYummThumbnail from "@/assets/work/too-yumm-thumbnail.png";
 import milanStambhThumbnail from "@/assets/work/milan-stambh-thumbnail.png";
 import dream11Thumbnail from "@/assets/work/dream11-thumbnail.png";
+import valentinesBagThumbnail from "@/assets/work/valentines-bag-thumbnail.png";
 
 type WorkItem = {
   id: number;
@@ -162,7 +163,7 @@ const workItems: WorkItem[] = [
     brand: "Flipkart Minutes",
     title: "Valentines Day Bag",
     category: ["Experiential"],
-    thumbnail: flipkartMinutesThumbnail,
+    thumbnail: valentinesBagThumbnail,
     url: "https://www.linkedin.com/posts/nidhi-netravalkar-022398155_newwork-activity-7294742379205419009-v4_X?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAwLWnEBQ5Vfs3waPznpLhR4CrXOWfxAyF4",
   },
   {
