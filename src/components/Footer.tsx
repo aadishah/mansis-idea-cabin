@@ -12,10 +12,6 @@ const Footer = () => {
             <p className="text-2xl font-heading font-bold">Mansi Nayyar</p>
           </div>
 
-          <p className="text-primary-foreground/80 max-w-2xl mx-auto">
-            Creative Writer & Ad Ideator crafting campaigns that move mountains and people.
-          </p>
-
           <div className="flex items-center justify-center gap-2 text-sm text-primary-foreground/70">
             <span>Made with</span>
             <Heart className="h-4 w-4 text-accent fill-accent" />
