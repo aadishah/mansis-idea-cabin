@@ -6,31 +6,27 @@ const AwardsSection = () => {
   const featuredAwards = [
     {
       year: "2024",
-      title: "Best Digital Campaign",
-      organization: "Advertising Awards of Excellence",
-      category: "Gold",
+      title: "Cannes Silver in Outdoor",
+      organization: "Too Yumm to Cheer",
+      brand: "Too Yumm",
+      category: "Silver",
       icon: Trophy,
     },
     {
-      year: "2023",
-      title: "Creative Excellence Award",
-      organization: "Industry Recognition Board",
-      category: "Gold",
+      year: "2024",
+      title: "Abby's Silver",
+      organization: "Big Sale of Small Things",
+      brand: "Flipkart Minutes",
+      category: "Silver",
       icon: Award,
     },
     {
-      year: "2023",
-      title: "Social Impact Campaign",
-      organization: "Marketing Society",
-      category: "Silver",
-      icon: Medal,
-    },
-    {
-      year: "2022",
-      title: "Rising Star in Advertising",
-      organization: "Young Professionals Network",
+      year: "2024",
+      title: "Baby Blue Elephant",
+      organization: "Kyoorius",
+      brand: "Too Yumm",
       category: "Recognition",
-      icon: Star,
+      icon: Medal,
     },
   ];
 
@@ -74,11 +70,14 @@ const AwardsSection = () => {
                 </div>
                 <div>
                   <div className="text-sm text-muted-foreground mb-2">{award.year}</div>
-                  <h3 className="font-heading font-bold text-lg mb-2">
+                  <h3 className="font-heading font-bold text-lg mb-1">
                     {award.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground mb-2">
+                  <p className="text-sm text-muted-foreground mb-1">
                     {award.organization}
+                  </p>
+                  <p className="text-sm font-medium text-foreground/80 mb-2">
+                    {award.brand}
                   </p>
                   <span className={`inline-block text-sm font-medium ${getCategoryColor(award.category)}`}>
                     {award.category}
