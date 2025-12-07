@@ -18,6 +18,7 @@ import tooYummThumbnail from "@/assets/work/too-yumm-thumbnail.png";
 import milanStambhThumbnail from "@/assets/work/milan-stambh-thumbnail.png";
 import dream11Thumbnail from "@/assets/work/dream11-thumbnail.png";
 import valentinesBagThumbnail from "@/assets/work/valentines-bag-thumbnail.png";
+import monumentalSaleThumbnail from "@/assets/work/monumental-sale-thumbnail.png";
 
 type WorkItem = {
   id: number;
@@ -171,7 +172,7 @@ const workItems: WorkItem[] = [
     brand: "Flipkart",
     title: "Monumental Sale",
     category: ["TVC"],
-    thumbnail: flipkartGaneshThumbnail,
+    thumbnail: monumentalSaleThumbnail,
     url: "https://www.linkedin.com/posts/upasana-naithani-35618614_flipkartmonumentalsale-fcbkinnect-kinnectimpact-ugcPost-7285569348776202242-NrQt?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAwLWnEBQ5Vfs3waPznpLhR4CrXOWfxAyF4",
   },
   {
