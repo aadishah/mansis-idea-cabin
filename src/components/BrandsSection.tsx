@@ -1,16 +1,13 @@
 import flipkartLogo from "@/assets/brands/flipkart.png";
-import asianPaintsLogo from "@/assets/brands/asian-paints.png";
+import flipkartMinutesLogo from "@/assets/brands/flipkart-minutes.webp";
+import asianPaintsLogo from "@/assets/brands/asian-paints.webp";
 import bajajAllianzLogo from "@/assets/brands/bajaj-allianz.png";
 import olaLogo from "@/assets/brands/ola.png";
 import linkedinLogo from "@/assets/brands/linkedin.png";
 import ultratechLogo from "@/assets/brands/ultratech.png";
 import dream11Logo from "@/assets/brands/dream11.png";
 import lenovoLogo from "@/assets/brands/lenovo.png";
-import daburLogo from "@/assets/brands/dabur.png";
-import bajajLogo from "@/assets/brands/bajaj.png";
-import hdfcLogo from "@/assets/brands/hdfc.png";
-import tideLogo from "@/assets/brands/tide.png";
-import pgLogo from "@/assets/brands/pg.png";
+import diataalLogo from "@/assets/brands/diataal.png";
 
 type Brand = {
   id: number;
@@ -20,20 +17,15 @@ type Brand = {
 
 const brands: Brand[] = [
   { id: 1, name: "Flipkart", logo: flipkartLogo },
-  { id: 2, name: "Flipkart Minutes", logo: flipkartLogo },
+  { id: 2, name: "Flipkart Minutes", logo: flipkartMinutesLogo },
   { id: 3, name: "Asian Paints", logo: asianPaintsLogo },
   { id: 4, name: "Bajaj Allianz", logo: bajajAllianzLogo },
-  { id: 5, name: "Ola UK", logo: olaLogo },
+  { id: 5, name: "Ola", logo: olaLogo },
   { id: 6, name: "LinkedIn", logo: linkedinLogo },
   { id: 7, name: "Ultratech", logo: ultratechLogo },
   { id: 8, name: "Dream11", logo: dream11Logo },
   { id: 9, name: "Lenovo", logo: lenovoLogo },
-  { id: 10, name: "Diataal", logo: daburLogo },
-  { id: 11, name: "Bajaj Dominar", logo: bajajLogo },
-  { id: 12, name: "HDFC", logo: hdfcLogo },
-  { id: 13, name: "Tide", logo: tideLogo },
-  { id: 14, name: "Ariel", logo: pgLogo },
-  { id: 15, name: "Too Yumm!", logo: pgLogo },
+  { id: 10, name: "Diataal", logo: diataalLogo },
 ];
 
 const BrandsSection = () => {
