@@ -15,6 +15,7 @@ import flipkartMinutesThumbnail from "@/assets/work/flipkart-minutes-thumbnail.p
 import flipkartGaneshThumbnail from "@/assets/work/flipkart-ganesh-thumbnail.png";
 import asianPaintsThumbnail from "@/assets/work/asian-paints-thumbnail.png";
 import tooYummThumbnail from "@/assets/work/too-yumm-thumbnail.png";
+import milanStambhThumbnail from "@/assets/work/milan-stambh-thumbnail.png";
 
 type WorkItem = {
   id: number;
@@ -152,7 +153,7 @@ const workItems: WorkItem[] = [
     brand: "Asian Paints",
     title: "Milan Stambh Maha Kumbh Mela",
     category: ["Experiential"],
-    thumbnail: asianPaintsThumbnail,
+    thumbnail: milanStambhThumbnail,
     url: "https://www.linkedin.com/posts/wearekinnect_mahakumbh-milanstambh-divineintersections-activity-7302191110238429184-kDtg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAwLWnEBQ5Vfs3waPznpLhR4CrXOWfxAyF4",
   },
   {
