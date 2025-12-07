@@ -1,6 +1,6 @@
 import flipkartLogo from "@/assets/brands/flipkart.avif";
 import flipkartMinutesLogo from "@/assets/brands/flipkart-minutes.webp";
-import asianPaintsLogo from "@/assets/brands/asian-paints.webp";
+import asianPaintsLogo from "@/assets/brands/asian-paints.jpg";
 import bajajAllianzLogo from "@/assets/brands/bajaj-allianz.png";
 import olaLogo from "@/assets/brands/ola.png";
 import linkedinLogo from "@/assets/brands/linkedin.png";
