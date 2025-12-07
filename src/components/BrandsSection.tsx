@@ -8,6 +8,11 @@ import ultratechLogo from "@/assets/brands/ultratech.png";
 import dream11Logo from "@/assets/brands/dream11.png";
 import lenovoLogo from "@/assets/brands/lenovo.png";
 import diataalLogo from "@/assets/brands/diataal.png";
+import ceatLogo from "@/assets/brands/ceat.svg";
+import hdfcLogo from "@/assets/brands/hdfc.png";
+import tideLogo from "@/assets/brands/tide.jpeg";
+import arielLogo from "@/assets/brands/ariel.jpg";
+import tooYummLogo from "@/assets/brands/too-yumm.webp";
 
 type Brand = {
   id: number;
@@ -26,6 +31,11 @@ const brands: Brand[] = [
   { id: 8, name: "Dream11", logo: dream11Logo },
   { id: 9, name: "Lenovo", logo: lenovoLogo },
   { id: 10, name: "Diataal", logo: diataalLogo },
+  { id: 11, name: "CEAT", logo: ceatLogo },
+  { id: 12, name: "HDFC Bank", logo: hdfcLogo },
+  { id: 13, name: "Tide", logo: tideLogo },
+  { id: 14, name: "Ariel", logo: arielLogo },
+  { id: 15, name: "Too Yumm!", logo: tooYummLogo },
 ];
 
 const BrandsSection = () => {
