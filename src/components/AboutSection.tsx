@@ -19,7 +19,7 @@ const AboutSection = () => {
               style={{ animationDelay: "0.2s" }}
             >
               <p>
-                I was never built for a straight line. My life has been a series of brave left turns—journalism, literature, solo travel, teaching, and eventually advertising—all tied together by one instinct: to understand what moves people.
+                I was never built for a straight line. My life has been a series of brave left turns, journalism, literature, solo travel, teaching, and eventually advertising, all tied together by one instinct: to understand what moves people.
               </p>
               <p>
                 Every detour gave me a new lens, a new rhythm, a new way to read the world. Today, I carry all of it into my work. Curiosity steadies me, chaos sharpens me, and the stories I've collected along the way help me create ideas that feel lived-in, honest, and impossible to forget.
