@@ -19,6 +19,7 @@ import milanStambhThumbnail from "@/assets/work/milan-stambh-thumbnail.png";
 import dream11Thumbnail from "@/assets/work/dream11-thumbnail.png";
 import valentinesBagThumbnail from "@/assets/work/valentines-bag-thumbnail.png";
 import monumentalSaleThumbnail from "@/assets/work/monumental-sale-thumbnail.png";
+import newYearsFilmThumbnail from "@/assets/work/new-years-film-thumbnail.png";
 
 type WorkItem = {
   id: number;
@@ -180,7 +181,7 @@ const workItems: WorkItem[] = [
     brand: "Flipkart Minutes",
     title: "New Years Film",
     category: ["TVC"],
-    thumbnail: flipkartMinutesThumbnail,
+    thumbnail: newYearsFilmThumbnail,
     url: "https://www.linkedin.com/posts/pratikshetty_our-rock-completing-one-more-circle-around-ugcPost-7279772348730236929-RmP-/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAAwLWnEBQ5Vfs3waPznpLhR4CrXOWfxAyF4",
   },
   {
