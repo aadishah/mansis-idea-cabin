@@ -139,12 +139,60 @@ const workItems: WorkItem[] = [
     thumbnail: tooYummThumbnail,
     url: "https://www.linkedin.com/posts/parth-chhatrapati-912622200_too-yumm-to-cheer-ugcPost-7318654833433989122-FSM8?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAAwLWnEBQ5Vfs3waPznpLhR4CrXOWfxAyF4",
   },
+  {
+    id: 15,
+    brand: "Dream11",
+    title: "Iss Hafte Naya Kya?",
+    category: ["Digital"],
+    thumbnail: flipkartGaneshThumbnail,
+    url: "https://www.linkedin.com/posts/wearekinnect_dream-11-x-fcb-kinnect-isshaftenayakya-activity-7313146909404098560-x_o8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAwLWnEBQ5Vfs3waPznpLhR4CrXOWfxAyF4",
+  },
+  {
+    id: 16,
+    brand: "Asian Paints",
+    title: "Milan Stambh Maha Kumbh Mela",
+    category: ["Experiential"],
+    thumbnail: asianPaintsThumbnail,
+    url: "https://www.linkedin.com/posts/wearekinnect_mahakumbh-milanstambh-divineintersections-activity-7302191110238429184-kDtg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAwLWnEBQ5Vfs3waPznpLhR4CrXOWfxAyF4",
+  },
+  {
+    id: 17,
+    brand: "Flipkart Minutes",
+    title: "Valentines Day Bag",
+    category: ["Experiential"],
+    thumbnail: flipkartMinutesThumbnail,
+    url: "https://www.linkedin.com/posts/nidhi-netravalkar-022398155_newwork-activity-7294742379205419009-v4_X?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAwLWnEBQ5Vfs3waPznpLhR4CrXOWfxAyF4",
+  },
+  {
+    id: 18,
+    brand: "Flipkart",
+    title: "Monumental Sale",
+    category: ["TVC"],
+    thumbnail: flipkartGaneshThumbnail,
+    url: "https://www.linkedin.com/posts/upasana-naithani-35618614_flipkartmonumentalsale-fcbkinnect-kinnectimpact-ugcPost-7285569348776202242-NrQt?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAwLWnEBQ5Vfs3waPznpLhR4CrXOWfxAyF4",
+  },
+  {
+    id: 19,
+    brand: "Flipkart Minutes",
+    title: "New Years Film",
+    category: ["TVC"],
+    thumbnail: flipkartMinutesThumbnail,
+    url: "https://www.linkedin.com/posts/upasana-naithani-35618614_flipkartmonumentalsale-fcbkinnect-kinnectimpact-ugcPost-7285569348776202242-NrQt?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAAwLWnEBQ5Vfs3waPznpLhR4CrXOWfxAyF4",
+  },
+  {
+    id: 20,
+    brand: "Flipkart",
+    title: "Big Sale of Small Things",
+    category: ["Digital", "Award Winning"],
+    thumbnail: flipkartGaneshThumbnail,
+    url: "https://www.linkedin.com/posts/wearekinnect_flipkart-bigsaleofsmallthings-activity-7242872602396946432-Wcy-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAwLWnEBQ5Vfs3waPznpLhR4CrXOWfxAyF4",
+  },
 ];
 
 const WorkSection = () => {
   const [activeFilter, setActiveFilter] = useState<string>("All");
 
-  const categories = ["All", "Digital", "Social", "Films", "Experiential", "Brand Placement"];
+  const categories = ["All", "Digital", "Social", "TVC", "Experiential", "Brand Placement"];
 
   const filteredWork =
     activeFilter === "All" ? workItems : workItems.filter((item) => item.category.includes(activeFilter));
