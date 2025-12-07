@@ -5,7 +5,6 @@ const AboutSection = () => {
     { icon: Mountain, text: "Lives for trekking and mountain sunrises" },
     { icon: Dog, text: "Will always stop to pet a dog" },
     { icon: Plane, text: "Plans travel itineraries for fun" },
-    { icon: Book, text: "Always has a book or podcast on the go" },
   ];
 
   return (
