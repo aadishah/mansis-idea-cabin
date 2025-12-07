@@ -11,7 +11,7 @@ import diataalLogo from "@/assets/brands/diataal.png";
 import ceatLogo from "@/assets/brands/ceat.svg";
 import hdfcLogo from "@/assets/brands/hdfc.png";
 import tideLogo from "@/assets/brands/tide.png";
-import arielLogo from "@/assets/brands/ariel.jpg";
+import arielLogo from "@/assets/brands/ariel.png";
 import tooYummLogo from "@/assets/brands/too-yumm.webp";
 
 type Brand = {
