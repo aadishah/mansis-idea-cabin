@@ -10,7 +10,7 @@ import lenovoLogo from "@/assets/brands/lenovo.png";
 import diataalLogo from "@/assets/brands/diataal.png";
 import ceatLogo from "@/assets/brands/ceat.svg";
 import hdfcLogo from "@/assets/brands/hdfc.png";
-import tideLogo from "@/assets/brands/tide.jpeg";
+import tideLogo from "@/assets/brands/tide.png";
 import arielLogo from "@/assets/brands/ariel.jpg";
 import tooYummLogo from "@/assets/brands/too-yumm.webp";
 
