@@ -13,44 +13,39 @@ const ContactSection = () => {
     message: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
     
-    // TODO: Replace with your Zapier webhook URL
-    // Get this from: Zapier > Create Zap > Add Webhook trigger (Catch Hook)
-    const webhookUrl = "YOUR_ZAPIER_WEBHOOK_URL_HERE";
+    // Using Formsubmit.co - replace with your email
+    const yourEmail = "manc.nayyar@gmail.com";
     
-    if (!webhookUrl || webhookUrl === "YOUR_ZAPIER_WEBHOOK_URL_HERE") {
-      toast({
-        title: "Configuration Needed",
-        description: "Please add your Zapier webhook URL in the code.",
-        variant: "destructive",
-      });
-      return;
-    }
-
     try {
-      await fetch(webhookUrl, {
+      const response = await fetch(`https://formsubmit.co/ajax/${yourEmail}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "Accept": "application/json",
         },
-        mode: "no-cors",
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
           message: formData.message,
-          timestamp: new Date().toISOString(),
-          source: "Portfolio Contact Form",
+          _subject: "New Portfolio Contact Form Submission",
         }),
       });
 
-      toast({
-        title: "Message Sent!",
-        description: "Thanks for reaching out. I'll get back to you soon!",
-      });
-      
-      setFormData({ name: "", email: "", message: "" });
+      if (response.ok) {
+        toast({
+          title: "Message Sent!",
+          description: "Thanks for reaching out. I'll get back to you soon!",
+        });
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        throw new Error("Failed to send");
+      }
     } catch (error) {
       console.error("Error sending message:", error);
       toast({
@@ -58,6 +53,8 @@ const ContactSection = () => {
         description: "Failed to send message. Please try again.",
         variant: "destructive",
       });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -113,8 +110,8 @@ const ContactSection = () => {
                   className="rounded-xl bg-card border-border"
                 />
               </div>
-              <Button type="submit" className="btn-accent w-full">
-                Send Message
+              <Button type="submit" className="btn-accent w-full" disabled={isSubmitting}>
+                {isSubmitting ? "Sending..." : "Send Message"}
                 <Send className="ml-2 h-5 w-5" />
               </Button>
             </form>
