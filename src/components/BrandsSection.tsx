@@ -9,7 +9,7 @@ import dream11Logo from "@/assets/brands/dream11.png";
 import lenovoLogo from "@/assets/brands/lenovo.png";
 import diataalLogo from "@/assets/brands/diataal.png";
 import ceatLogo from "@/assets/brands/ceat.svg";
-import hdfcLogo from "@/assets/brands/hdfc.png";
+import hdfcLogo from "@/assets/brands/hdfc.jpg";
 import tideLogo from "@/assets/brands/tide.png";
 import arielLogo from "@/assets/brands/ariel.png";
 import tooYummLogo from "@/assets/brands/too-yumm.webp";
