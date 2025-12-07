@@ -1,7 +1,7 @@
 const experiences = [
   { company: "FCB Kinnect", role: "Copy Supervisor", period: "Jul 2024 - Present" },
   { company: "FCB Kinnect", role: "Senior Copywriter", period: "Dec 2022 - Jul 2024" },
-  { company: "Leo Burnett", role: "Copywriter", period: "Aug 2020 - Feb 2023" },
+  { company: "Leo Burnett", role: "Copywriter", period: "Aug 2020 - Dec 2022" },
   { company: "Eighty Degree Adventure Sports", role: "Social Media Manager (Freelance)", period: "Jan 2018 - Mar 2020" },
   { company: "Wiki of Thrones", role: "Content Writer (Freelance)", period: "Oct 2016 - Feb 2017" },
   { company: "Hindustan Times", role: "Advertising Sales (Internship)", period: "Aug 2014 - Dec 2014" },
