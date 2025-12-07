@@ -16,6 +16,7 @@ import flipkartGaneshThumbnail from "@/assets/work/flipkart-ganesh-thumbnail.png
 import asianPaintsThumbnail from "@/assets/work/asian-paints-thumbnail.png";
 import tooYummThumbnail from "@/assets/work/too-yumm-thumbnail.png";
 import milanStambhThumbnail from "@/assets/work/milan-stambh-thumbnail.png";
+import dream11Thumbnail from "@/assets/work/dream11-thumbnail.png";
 
 type WorkItem = {
   id: number;
@@ -145,7 +146,7 @@ const workItems: WorkItem[] = [
     brand: "Dream11",
     title: "Iss Hafte Naya Kya?",
     category: ["Digital"],
-    thumbnail: flipkartGaneshThumbnail,
+    thumbnail: dream11Thumbnail,
     url: "https://www.linkedin.com/posts/wearekinnect_dream-11-x-fcb-kinnect-isshaftenayakya-activity-7313146909404098560-x_o8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAwLWnEBQ5Vfs3waPznpLhR4CrXOWfxAyF4",
   },
   {
