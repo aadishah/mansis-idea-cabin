@@ -181,7 +181,7 @@ const workItems: WorkItem[] = [
     title: "New Years Film",
     category: ["TVC"],
     thumbnail: flipkartMinutesThumbnail,
-    url: "https://www.linkedin.com/posts/upasana-naithani-35618614_flipkartmonumentalsale-fcbkinnect-kinnectimpact-ugcPost-7285569348776202242-NrQt?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAAwLWnEBQ5Vfs3waPznpLhR4CrXOWfxAyF4",
+    url: "https://www.linkedin.com/posts/pratikshetty_our-rock-completing-one-more-circle-around-ugcPost-7279772348730236929-RmP-/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAAwLWnEBQ5Vfs3waPznpLhR4CrXOWfxAyF4",
   },
   {
     id: 20,
