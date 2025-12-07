@@ -20,6 +20,7 @@ import dream11Thumbnail from "@/assets/work/dream11-thumbnail.png";
 import valentinesBagThumbnail from "@/assets/work/valentines-bag-thumbnail.png";
 import monumentalSaleThumbnail from "@/assets/work/monumental-sale-thumbnail.png";
 import newYearsFilmThumbnail from "@/assets/work/new-years-film-thumbnail.png";
+import bigSaleSmallThingsThumbnail from "@/assets/work/big-sale-small-things-thumbnail.png";
 
 type WorkItem = {
   id: number;
@@ -189,7 +190,7 @@ const workItems: WorkItem[] = [
     brand: "Flipkart",
     title: "Big Sale of Small Things",
     category: ["Digital", "Award Winning"],
-    thumbnail: flipkartGaneshThumbnail,
+    thumbnail: bigSaleSmallThingsThumbnail,
     url: "https://www.linkedin.com/posts/wearekinnect_flipkart-bigsaleofsmallthings-activity-7242872602396946432-Wcy-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAwLWnEBQ5Vfs3waPznpLhR4CrXOWfxAyF4",
   },
 ];
