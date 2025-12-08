@@ -1,4 +1,5 @@
-import { Heart, Mountain } from "lucide-react";
+import { Heart } from "lucide-react";
+import chameleonLogo from "@/assets/chameleon-logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -8,7 +9,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center space-y-6">
           <div className="flex items-center justify-center gap-2">
-            <Mountain className="h-6 w-6" />
+            <img src={chameleonLogo} alt="Logo" className="h-8 w-8 object-contain" />
             <p className="text-2xl font-heading font-bold">Mansi Nayyar</p>
           </div>
 
