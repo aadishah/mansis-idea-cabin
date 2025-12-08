@@ -198,7 +198,7 @@ const workItems: WorkItem[] = [
 const WorkSection = () => {
   const [activeFilter, setActiveFilter] = useState<string>("All");
 
-  const categories = ["All", "Digital", "Social", "TVC", "Experiential", "Brand Placement"];
+  const categories = ["All", "Digital", "Social", "TVC", "Experiential", "Brand Placement", "Award Winning"];
 
   const filteredWork =
     activeFilter === "All" ? workItems : workItems.filter((item) => item.category.includes(activeFilter));
