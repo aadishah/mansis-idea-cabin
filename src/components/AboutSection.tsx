@@ -10,10 +10,17 @@ const AboutSection = () => {
   return (
     <section id="about" className="section-padding bg-gradient-subtle">
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        {/* Photo + Heading Row */}
+        <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
+          <div className="w-48 h-48 md:w-56 md:h-56 rounded-full bg-muted border-4 border-accent/20 flex items-center justify-center overflow-hidden animate-fade-in shadow-soft">
+            <span className="text-muted-foreground text-sm">Your Photo</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground animate-fade-in text-center md:text-left">About Me</h2>
+        </div>
+        
+        <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Left Column - Main Story */}
           <div className="space-y-6">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground animate-fade-in">About Me</h2>
             <div
               className="space-y-4 text-lg text-muted-foreground leading-relaxed animate-fade-in"
               style={{ animationDelay: "0.2s" }}
