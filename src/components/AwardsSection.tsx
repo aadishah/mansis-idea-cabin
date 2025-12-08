@@ -28,7 +28,7 @@ const AwardsSection = () => {
       subcategory: "Kyoorius Creative Awards",
       campaign: "Too Yumm! to Cheer",
       brand: "Too Yumm!",
-      category: "Recognition",
+      category: "Baby Blue Elephant",
       icon: Medal,
     },
   ];
