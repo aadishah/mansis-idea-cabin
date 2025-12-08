@@ -1,4 +1,5 @@
 import { Mountain, Dog, Plane, Book } from "lucide-react";
+import mansiPhoto from "@/assets/mansi-photo.jpeg";
 
 const AboutSection = () => {
   const funFacts = [
@@ -13,7 +14,7 @@ const AboutSection = () => {
         {/* Photo + Heading Row */}
         <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
           <div className="w-48 h-48 md:w-56 md:h-56 rounded-full bg-muted border-4 border-accent/20 flex items-center justify-center overflow-hidden animate-fade-in shadow-soft">
-            <span className="text-muted-foreground text-sm">Your Photo</span>
+            <img src={mansiPhoto} alt="Mansi Nayyar" className="w-full h-full object-cover" />
           </div>
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground animate-fade-in text-center md:text-left">About Me</h2>
         </div>
