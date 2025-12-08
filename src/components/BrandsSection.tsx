@@ -18,6 +18,7 @@ type Brand = {
   id: number;
   name: string;
   logo: string;
+  scale?: string;
 };
 
 const brands: Brand[] = [
@@ -32,7 +33,7 @@ const brands: Brand[] = [
   { id: 9, name: "Lenovo", logo: lenovoLogo },
   { id: 10, name: "Diataal", logo: diataalLogo },
   { id: 11, name: "CEAT", logo: ceatLogo },
-  { id: 12, name: "HDFC Bank", logo: hdfcLogo },
+  { id: 12, name: "HDFC Bank", logo: hdfcLogo, scale: "scale-150" },
   { id: 13, name: "Tide", logo: tideLogo },
   { id: 14, name: "Ariel", logo: arielLogo },
   { id: 15, name: "Too Yumm!", logo: tooYummLogo },
@@ -62,7 +63,7 @@ const BrandsSection = () => {
                 <img
                   src={brand.logo}
                   alt={`${brand.name} logo`}
-                  className="w-full h-full object-contain transition-all duration-300"
+                  className={`w-full h-full object-contain transition-all duration-300 ${brand.scale || ""}`}
                 />
               </div>
             </div>
